@@ -1,0 +1,21 @@
+# PDF Processing
+PyMuPDF==1.23.26
+
+# OpenAI
+openai==1.12.0
+
+# Vector Database
+chromadb==0.4.22
+
+# Text Processing
+langchain==0.1.9
+
+# API (for later)
+fastapi==0.109.2
+uvicorn[standard]==0.27.1
+
+# Utilities
+python-dotenv==1.0.1
+tqdm==4.66.1
+
+AA00F31DDR
