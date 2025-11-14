@@ -2,10 +2,10 @@
 PyMuPDF==1.23.26
 
 # OpenAI
-openai==1.12.0
+openai==2.3.0
 
 # Vector Database
-chromadb==0.4.22
+chromadb==1.1.1
 
 # Text Processing
 langchain==0.1.9
@@ -18,4 +18,21 @@ uvicorn[standard]==0.27.1
 python-dotenv==1.0.1
 tqdm==4.66.1
 
-AA00F31DDR
+# Core Dependencies
+python-dotenv>=1.0.0
+
+# Data & API
+pydantic>=2.0.0
+
+# Optional but recommended
+python-multipart  # For file uploads if needed
+
+beautifulsoup4
+requests
+playwright
+
+PyMuPDF
+tqdm
+langchain
+tiktoken
+
