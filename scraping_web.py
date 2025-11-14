@@ -248,7 +248,7 @@ def main():
     volume_links = get_volume_links(VOLUMES_LIST_URL)
     
     if not volume_links:
-        print("❌ Could not find any Volume links. Exiting.")
+        print(" Could not find any Volume links. Exiting.")
         return
     
     print(f"\nFound {len(volume_links)} volumes total")
@@ -294,7 +294,7 @@ def main():
             total_failed += volume_stats['failed']
             
         except Exception as e:
-            print(f"❌ Error processing volume: {e}")
+            print(f"Error processing volume: {e}")
             continue
     
     # Final summary

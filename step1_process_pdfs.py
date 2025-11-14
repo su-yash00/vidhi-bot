@@ -246,7 +246,7 @@ def main():
                                 if d.is_dir() and d.name not in exclude_folders])
 
     if not volume_folders:
-        print("❌ No volume folders found in 'data/' directory.")
+        print(" No volume folders found in 'data/' directory.")
         return
 
     print(f"\nFound {len(volume_folders)} volume(s):")

@@ -93,10 +93,10 @@ def main():
         # Fallback
         embeddings_file = Path("data/embeddings/embedded_chunks.json")
         if not embeddings_file.exists():
-            print("❌ Embeddings file not found!")
+            print(" Embeddings file not found!")
             return
     
-    print(f"\n📖 Loading embedded chunks...")
+    print(f"\n Loading embedded chunks...")
     with open(embeddings_file, 'r', encoding='utf-8') as f:
         embedded_chunks = json.load(f)
     
@@ -108,7 +108,7 @@ def main():
     
     stats = builder.get_stats()
     
-    print(f"\n📊 Vector Store Statistics:")
+    print(f"\n Vector Store Statistics:")
     print(f"   Total documents: {stats['total_documents']}")
     print(f"   Available metadata fields: {len(stats['available_metadata'])}")
     print(f"   Fields: {', '.join(stats['available_metadata'][:10])}...")
@@ -117,7 +117,7 @@ def main():
     print("   VECTOR STORE BUILT SUCCESSFULLY!")
     print("=" * 70)
     print("✓ Database location: chroma_db/")
-    print("\n🎯 Next step: Run step4_test_rag_enhanced.py")
+    print("\n Next step: Run step4_test_rag_enhanced.py")
 
 
 if __name__ == "__main__":

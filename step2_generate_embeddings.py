@@ -16,7 +16,7 @@ class EmbeddingGenerator:
     def __init__(self):
         api_key = os.getenv('OPENAI_API_KEY')
         if not api_key:
-            raise ValueError("❌ OPENAI_API_KEY not found in .env file!")
+            raise ValueError(" OPENAI_API_KEY not found in .env file!")
         
         os.environ["OPENAI_API_KEY"] = api_key
         self.client = OpenAI()
@@ -117,7 +117,7 @@ def main():
         # Fallback to original chunks
         chunks_file = Path("data/processed/all_chunks.json")
         if not chunks_file.exists():
-            print("❌ Chunks file not found!")
+            print(" Chunks file not found!")
             return
     
     try:
